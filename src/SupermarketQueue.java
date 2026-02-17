@@ -10,7 +10,7 @@ public class SupermarketQueue {
         int[] tills = new int[n];
 
         for (int customerTime : customers) {
-ª   º            int minIndex = 0;
+            int minIndex = 0;
             for (int i = 1; i < n; i++) {
                 if (tills[i] < tills[minIndex]) {
                     minIndex = i;
