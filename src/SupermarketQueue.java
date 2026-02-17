@@ -1,7 +1,7 @@
 public class SupermarketQueue {
     public static void main(String[] args) {
-        int[] customers = { 2, 2, 3, 3, 4, 4 };
-        int n = 2;
+        int[] customers = { 2, 2, 7, 3, 3, 10, 4, 4, 2, 5, 8, 4, 3, 5};
+        int n = 4;
         System.out.println("Total time required for all the customers to check out is: " + solveSuperMarketQueue(customers, n));
     }
 
@@ -10,7 +10,7 @@ public class SupermarketQueue {
         int[] tills = new int[n];
 
         for (int customerTime : customers) {
-            int minIndex = 0;
+ª   º            int minIndex = 0;
             for (int i = 1; i < n; i++) {
                 if (tills[i] < tills[minIndex]) {
                     minIndex = i;
